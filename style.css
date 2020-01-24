@@ -2,6 +2,7 @@
 
 body{
     color: #333333;
+    margin:0;
     font-family: YuGothic,'Yu Gothic',sans-serif;
 }
 
@@ -16,6 +17,7 @@ img{
     max-width: 100%;
     height:auto;
 }
+
 
 .hr1{
     border: none;
@@ -48,7 +50,7 @@ h4{
     display: flex;
     justify-content: space-between;
     width: 1080px;
-    margin:0 100px;
+    margin:0 auto;
     height: 70px;
     align-items: center;
 }
@@ -64,11 +66,13 @@ h4{
     filter:drop-shadow(3px 3px 10px rgba(0,0,0,0.16));
     font-weight:bold;
     font-size: 18px;
+    line-height: 48px;
+    text-align: center;
 }
 
 .heading{
     width: 1080px;
-    margin: 80px 100px 0 100px;
+    margin: 80px auto 0 ;
     height: 448px;
     display: flex;
     flex-direction: row-reverse;
@@ -91,23 +95,33 @@ h4{
 .heading-2 br{
     display: none;
 }
-.heading-3 button{
-    height: 48px;
-    border-radius: 32px;
-    filter: drop-shadow(3px 3px 10px rgba(0,0,0,0.16));
-    font-weight: bold;
-    font-size: 18px;
+.heading-3{
+    display: inline-flex;
 }
 .contact{
     width: 166px;
     background-color: #109954;
     color:#FFFFFF;
     margin-right: 10px;
+    height: 48px;
+    border-radius: 32px;
+    filter: drop-shadow(3px 3px 10px rgba(0,0,0,0.16));
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    line-height: 48px;
 }
 .siryou{
     width: 223px;
     background-color: #FFFFFF;
     border:2px #109954 solid;
+    height: 48px;
+    border-radius: 32px;
+    filter: drop-shadow(3px 3px 10px rgba(0,0,0,0.16));
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    line-height: 48px;
 }
 .heading-right{
     width: 560px;
@@ -116,10 +130,8 @@ h4{
 
 .service{
     width: 1080px;
-    margin-left:100px;
-    margin-right: 100px;
-    display:inline-block;
-    margin-top: 120px;
+    display:block;
+    margin: 120px auto 0;
     text-align: center;
 }
 .h2-ttl{
@@ -146,8 +158,8 @@ h4{
 
 .about{
     width: 950px;
-    display:inline-block;
-    margin: 120px 170px 0 170px;
+    display:block;
+    margin: 120px auto 0;
 }
 .about-box{
     height: 278px;
@@ -190,15 +202,14 @@ h4{
     border-radius: 24px;
     filter: drop-shadow(3px 3px 10px rgba(0,0,0,0.16));
     margin-top: 29px;
-    text-align: center;    
+    text-align: center;  
+    line-height: 48px;  
 }
 
 .news{
     width: 1080px;
-    margin-left:100px;
-    margin-right: 100px;
-    margin-top: 120px;
-    display: inline-block;
+    margin: 120px auto 0;
+    display: block;
     text-align: center;
 }
 .news-inner{
@@ -250,15 +261,17 @@ h4{
     text-align: center;
 }
 .more2{
+    display: inline-block;
     width: 120px;
     height: 36px;
     background-color: #109954;
     color:#FFFFFF;
     border-radius: 18px;
-    filter: drop-shadow(3px 3px 10px rgba(#00000029));
+    filter: drop-shadow(3px 3px 10px rgba(0,0,0,0.16));
     margin-top: 50px;
     font-size: 18px;
-
+    line-height: 36px;
+    text-align: center;
 }
 .hr2{
     background-color: #D6D6D6;
@@ -268,17 +281,20 @@ h4{
 }
 
 .footer{
-    display: inline-block;
-    margin-top: 100px;
-    width: 1280px;
+    text-align: center;
+    display: block;
+    margin: 100px 0 0;
+    padding: 25px 5px 14px;
+    width: 100%;
     height: 135px;
     background-color: #E8E8E8;
+    box-sizing:border-box;
+
 }
 .footer-inner{
     width: 1080px;
     height: 70px;
-    margin:25px auto 12px auto;
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
 }
 .footer-inner img{
@@ -301,27 +317,37 @@ li + li {
     border-left: 1px solid #333;
   }
 .footer small{
-    display: block;
+    width: 100%;
+    display: inline-block;
     text-align: center;
     font-size: 14px;
-    margin-bottom: 14px;
 }
 
-@media screen and (max-width:375px){
+@media screen and (max-width:768px){
     
     .header{
-        width: 345px;
-        margin:0 15px;
+        width: 100%;
+        margin:0 0;
+        box-sizing:border-box;
+        padding:0 15px;
 }
+    .logo-header{
+        width: 110px;
+        height: 28px;
+    }
 
     .heading{
-        width: 345px;
+        text-align: center;
+        width: 100%;
         height: auto;
-        margin:10px 15px 0;
+        margin:10px 0 0;
         display: block;
+        box-sizing:border-box;
+        padding:0 15px;
+
     }
     .heading-left{
-        width: 345px;
+        width: 100%;
         display: block;
         text-align: center;
     }
@@ -331,7 +357,7 @@ li + li {
         margin: 0 auto 22px;
     }
     .heading-2{
-        width: 345px;
+        width: 100%;
         height: auto;
         margin:0 0 20px 0;
     }
@@ -339,20 +365,25 @@ li + li {
         display: inline;
     }
     
-    .heading-3 button{
-        margin-bottom: 15px;
+    .heading-3{
+        display: inline-block;
     }
+    
     .heading-right{
         height: auto;
     }
     .contact{
-        margin-right: 0;
+        margin-bottom: 15px;
+        display: inline-block;
     }
 
     .service{
-        width: 345px;
-        margin:80px 15px 0;
+        width: 100%;
+        margin:80px 0 0;
         display: block;
+        box-sizing:border-box;
+        padding:0 15px;
+
     }
     .h2-ttl{
         margin: 0 0;
@@ -367,18 +398,20 @@ li + li {
         margin-bottom: 0;
     }
     .service-box-wrapper{
-        width: 345px;
+        width: 100%;
         display:flex;
         flex-direction: column;
         justify-content:space-between;
     }
 
     .about{
-        width: 345px;
+        width: 100%;
         height: auto;
-        margin:50px 15px 10px;
+        margin:50px 0 10px;
         display: block;
         text-align: center;
+        box-sizing:border-box;
+        padding:0 15px;
     }
     .about-box{
         margin-top: 70px;
@@ -394,29 +427,31 @@ li + li {
         width: 100%;    
     }
     .about-text1{
-        width: 345px;
+        width: 100%;
         height: auto;
         text-align: left;
     }
     .about-text2{
-        width: 345px;
+        width: 100%;
         height: auto;
         text-align: left;
     }
 
     
     .news{
-        width: 345px;
+        width: 100%;
         height: auto;
-        margin:100px 15px 0;
+        margin:100px 0 0;
         display: block;
+        box-sizing:border-box;
+        padding:0 15px;
     }
     .news-inner{
         margin: 0 0;
         text-align: center;
     }
     .news-box{
-        width: 345px;
+        width: 100%;
         height: auto;
         display: block;
     }
@@ -425,16 +460,16 @@ li + li {
         margin:0 auto 18px;
     }
     .news-box-right{
-        width: 345px;
+        width: 100%;
     }
     .news-box p{
-        width: 345px;
+        width: 100%;
         height: auto;
         margin: 24px 0 0 0;
         text-align: left;
     }
     .hr2{
-        width: 345px;
+        width: 100%;
     }
     .more2{
         margin-top: 30px;
@@ -445,13 +480,16 @@ li + li {
 
 
     .footer{
-        width: 375px;
+        width: 100%;
         height: auto;
         text-align: center;
+        padding: 0 10px 10px;
+        box-sizing:border-box;
     }
     .footer-inner{
-        display: block;
-        width: 375px;
+        margin-top:30px;
+        display: inline-block;
+        width: auto;
         height: auto;
     }
     .footer-inner ul{
@@ -468,6 +506,7 @@ li + li {
         border-left: none;   
     }
     .footer-small{
-        margin: 40px 0 20px 0;
-    } 
+        margin: 40px 0 20px;
+    }
+
 }
