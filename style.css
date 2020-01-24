@@ -483,7 +483,7 @@ li + li {
         width: 100%;
         height: auto;
         text-align: center;
-        padding: 0 10px 10px;
+        padding: 0 10px 20px;
         box-sizing:border-box;
     }
     .footer-inner{
@@ -493,7 +493,7 @@ li + li {
         height: auto;
     }
     .footer-inner ul{
-        margin: 23px 0 0 0;
+        margin: 23px 0 40px 0;
         padding: 0 0;
         display: block;
         text-align: center;
@@ -506,7 +506,7 @@ li + li {
         border-left: none;   
     }
     .footer-small{
-        margin: 40px 0 20px;
+        margin: 40px 0 0;
     }
 
 }
