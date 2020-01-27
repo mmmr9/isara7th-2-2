@@ -47,9 +47,14 @@ h4{
 }
 
 .header{
+    text-align: center;
+    display: block;
+    margin: 0 15px;
+}
+.header-inner{
     display: flex;
     justify-content: space-between;
-    width: 1080px;
+    max-width: 1080px;
     margin:0 auto;
     height: 70px;
     align-items: center;
@@ -71,7 +76,11 @@ h4{
 }
 
 .heading{
-    width: 1080px;
+    padding: 0 15px;
+    display: block;
+}
+.heading-inner{
+    max-width: 1080px;
     margin: 80px auto 0 ;
     height: 448px;
     display: flex;
@@ -79,6 +88,7 @@ h4{
     justify-content: space-between;
 }
 .heading-left{
+    display: block;
     margin: auto auto auto 0;
 }
 .heading-ttl{
@@ -86,17 +96,18 @@ h4{
     font-size: 36px;
 }
 .heading-2{
-    height: 43px;
-    width: 400px;
+    height: auto;
+    max-width: 400px;
     font-size: 16px;
-    margin-top: 34px;
-    margin-bottom: 40px;
+    margin: 34px auto 40px;
 }
 .heading-2 br{
     display: none;
+    max-width: 400px;
 }
 .heading-3{
     display: inline-flex;
+    max-width: 400px;
 }
 .contact{
     width: 166px;
@@ -122,14 +133,19 @@ h4{
     font-size: 18px;
     text-align: center;
     line-height: 48px;
+    color: #109954;
 }
 .heading-right{
-    width: 560px;
-    height: 448px;
+    display: block;
+    max-width: 560px;
+    height: auto;
 }
 
 .service{
-    width: 1080px;
+    padding: 0 15px;
+}
+.service-inner{
+    max-width: 1080px;
     display:block;
     margin: 120px auto 0;
     text-align: center;
@@ -140,10 +156,12 @@ h4{
     margin:0 209px;
 }
 .service-inner{
-    margin: 109px 140px;
+    display: block;
+    margin: 109px auto;
 }
 .service-box-wrapper{
     width: 800px;
+    margin: 0 auto;
     display:flex;
     justify-content:space-between;
 }
@@ -156,10 +174,12 @@ h4{
     margin-top: 30px;
 }
 
-.about{
-    width: 950px;
+.about-inner{
+    display: block;
+    max-width: 950px;
     display:block;
     margin: 120px auto 0;
+    padding:0 15px;
 }
 .about-box{
     height: 278px;
@@ -207,19 +227,21 @@ h4{
 }
 
 .news{
-    width: 1080px;
-    margin: 120px auto 0;
-    display: block;
+    margin: 120px 15px 0;
     text-align: center;
+    display: block;
 }
 .news-inner{
-    margin: 101px 40px 0 40px;
+    display: block;
+    max-width: 1080px;
+    display: block;
+    margin: 101px auto 0;
 }
 .news-box{
     display: flex;
     justify-content: space-between;
-    width: 1000px;
-    height: 168px;
+    max-width: 1000px;
+    min-height: 168px;
     margin:20px 0;
 }
 .news-box-right{
@@ -261,21 +283,20 @@ h4{
     text-align: center;
 }
 .more2{
-    display: inline-block;
-    width: 120px;
-    height: 36px;
+    font-size: 18px;
+    width: 166px;
+    height: 48px;
     background-color: #109954;
     color:#FFFFFF;
-    border-radius: 18px;
+    border-radius: 24px;
     filter: drop-shadow(3px 3px 10px rgba(0,0,0,0.16));
-    margin-top: 50px;
-    font-size: 18px;
-    line-height: 36px;
-    text-align: center;
+    margin: 50px auto 0;
+    text-align: center;  
+    line-height: 48px;  
 }
 .hr2{
     background-color: #D6D6D6;
-    width: 1000px;
+    max-width: 1000px;
     height: 1px;
     border: none;
 }
@@ -292,10 +313,9 @@ h4{
 
 }
 .footer-inner{
-    width: 1080px;
     height: 70px;
     display: inline-flex;
-    justify-content: space-between;
+    justify-content:space-between;
 }
 .footer-inner img{
     width: 70px;
@@ -310,7 +330,7 @@ li{
     list-style-type: none;
     flex-grow: 1;
     text-align: center;
-    padding: 0 18px;;
+    padding: 0 18px;
     color:black;
 }
 li + li {
@@ -325,6 +345,16 @@ li + li {
 
 @media screen and (max-width:768px){
     
+    .hr1{
+        width: 94px;
+    }
+    
+    h2{
+        font-size: 28px;
+        margin:0 50px;
+    }
+    
+
     .header{
         width: 100%;
         margin:0 0;
@@ -336,7 +366,7 @@ li + li {
         height: 28px;
     }
 
-    .heading{
+    .heading-inner{
         text-align: center;
         width: 100%;
         height: auto;
@@ -359,7 +389,7 @@ li + li {
     .heading-2{
         width: 100%;
         height: auto;
-        margin:0 0 20px 0;
+        margin: 0 auto 20px;
     }
     .heading-2 br{
         display: inline;
@@ -435,6 +465,9 @@ li + li {
         width: 100%;
         height: auto;
         text-align: left;
+    }
+    .more{
+        margin: 30px auto 0;
     }
 
     
