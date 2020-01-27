@@ -87,8 +87,7 @@ h4{
     justify-content: space-between;
 }
 .heading-left{
-    flex:52;
-    max-width: 520px;
+    width: 49%;
     margin: auto auto auto 0;
 }
 .heading-ttl{
@@ -136,8 +135,7 @@ h4{
     color: #109954;
 }
 .heading-right{
-    flex:56;
-    max-width: 560px;
+    width: 51%;
 }
 
 .service{
@@ -242,7 +240,7 @@ h4{
     margin:20px 0;
 }
 .news-box-right{
-    flex-basis: 650px;
+    width: 70%;
     text-align: left;
     display: block;
     flex-wrap: wrap;
@@ -251,8 +249,7 @@ h4{
     display: flex;
 }
 .news-box img{
-    max-width: 300px;
-    flex-basis: 300px;
+    width: 30%;
 }
 .news-box time{
     font-weight: bold;
@@ -315,6 +312,7 @@ h4{
 }
 .footer-inner{
     max-width: 1080px;
+    margin: 0 auto;
     display: flex;
     justify-content:space-between;
 }
