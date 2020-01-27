@@ -41,7 +41,7 @@ h3{
 }
 
 h4{
-    width: 650px;
+    max-width: 650px;
     font-weight: bold;
     font-size: 16px;
 }
@@ -82,13 +82,13 @@ h4{
 .heading-inner{
     max-width: 1080px;
     margin: 80px auto 0 ;
-    height: 448px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
 }
 .heading-left{
-    display: block;
+    flex:52;
+    max-width: 520px;
     margin: auto auto auto 0;
 }
 .heading-ttl{
@@ -99,14 +99,14 @@ h4{
     height: auto;
     max-width: 400px;
     font-size: 16px;
-    margin: 34px auto 40px;
+    margin: 34px auto 40px 0;
 }
 .heading-2 br{
     display: none;
     max-width: 400px;
 }
 .heading-3{
-    display: inline-flex;
+    display: flex;
     max-width: 400px;
 }
 .contact{
@@ -136,9 +136,8 @@ h4{
     color: #109954;
 }
 .heading-right{
-    display: block;
+    flex:56;
     max-width: 560px;
-    height: auto;
 }
 
 .service{
@@ -234,24 +233,26 @@ h4{
 .news-inner{
     display: block;
     max-width: 1080px;
-    display: block;
     margin: 101px auto 0;
 }
 .news-box{
     display: flex;
     justify-content: space-between;
     max-width: 1000px;
-    min-height: 168px;
     margin:20px 0;
 }
 .news-box-right{
+    flex-basis: 650px;
     text-align: left;
-    display: flex;
+    display: block;
     flex-wrap: wrap;
 }
+.news-box1{
+    display: flex;
+}
 .news-box img{
-    width: 300px;
-    height: 168px;
+    max-width: 300px;
+    flex-basis: 300px;
 }
 .news-box time{
     font-weight: bold;
@@ -261,8 +262,8 @@ h4{
     margin: 20px auto 0 0;
 }
 .news-box p{
-    width: 650px;
-    height: 44px;
+    max-width: 650px;
+    height: auto;
     font-size: 16px;
     margin-top: 20px;
 }
@@ -305,7 +306,7 @@ h4{
     text-align: center;
     display: block;
     margin: 100px 0 0;
-    padding: 25px 5px 14px;
+    padding: 25px 15px 14px;
     width: 100%;
     height: 135px;
     background-color: #E8E8E8;
@@ -313,8 +314,8 @@ h4{
 
 }
 .footer-inner{
-    height: 70px;
-    display: inline-flex;
+    max-width: 1080px;
+    display: flex;
     justify-content:space-between;
 }
 .footer-inner img{
