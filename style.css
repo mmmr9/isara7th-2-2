@@ -38,6 +38,7 @@ h3{
     font-size: 32px;
     color: #109954;
     text-align: left;
+    margin:30px 0;
 }
 
 h4{
@@ -150,14 +151,14 @@ h4{
 .h2-ttl{
     display:flex;
     align-items: center;
-    margin:0 209px;
+    margin:0 auto;
 }
 .service-inner{
     display: block;
     margin: 109px auto;
 }
 .service-box-wrapper{
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
     display:flex;
     justify-content:space-between;
@@ -173,42 +174,43 @@ h4{
 
 .about-inner{
     display: block;
-    max-width: 950px;
+    max-width: 980px;
     display:block;
     margin: 120px auto 0;
     padding:0 15px;
 }
 .about-box{
-    height: 278px;
     margin-top: 100px;
 }
 .about-box .about-body .about-inner {
     width: 50%;
 }
+.about-img{
+    margin: 0 20px;
+}
+.about-body{
+    margin: 0 20px;
+
+}
 .about-inner .about-box{
     display: flex;
     justify-content: space-between;
-
 }
 .about-inner .about-box:nth-child(odd){
     flex-direction: row-reverse;
 }
-.about-box img{
-    width: 450px;    
-}
 .about-box img{ 
+    width: 450px;
     filter: drop-shadow(0px 11px 20px rgba(0,0,0,0.16));
 }
 .about-img1{
     text-align: right !important;
 }
 .about-text1{
-    width: 450px;
-    height: 127px;
+    max-width: 450px;
 }
 .about-text2{
-    width: 450px;
-    height: 97px;
+    max-width: 450px;
 }
 .more{
     font-size: 18px;
@@ -346,11 +348,12 @@ li + li {
     
     .hr1{
         width: 94px;
+        margin: 0 0;
     }
     
     h2{
         font-size: 28px;
-        margin:0 50px;
+        margin:0 17px;
     }
     
 
@@ -399,7 +402,7 @@ li + li {
     }
     
     .heading-right{
-        height: auto;
+        width: 100%;
     }
     .contact{
         margin-bottom: 15px;
@@ -415,7 +418,10 @@ li + li {
 
     }
     .h2-ttl{
-        margin: 0 0;
+        margin: 0 auto;
+        display:flex;
+        align-items: center;
+        justify-content: center;
     }
     .service-inner{
         margin:80px 0 0 0;
@@ -441,6 +447,12 @@ li + li {
         text-align: center;
         box-sizing:border-box;
         padding:0 15px;
+    }
+    .about-inner{
+        margin-top: 80px;
+    }
+    .about-body{
+        margin: 0 0;
     }
     .about-box{
         margin-top: 70px;
@@ -479,7 +491,7 @@ li + li {
         padding:0 15px;
     }
     .news-inner{
-        margin: 0 0;
+        margin: 80px 0 0;
         text-align: center;
     }
     .news-box{
@@ -488,6 +500,7 @@ li + li {
         display: block;
     }
     .news-box img{ 
+        width: 86%;
         display: block;
         margin:0 auto 18px;
     }
