@@ -242,7 +242,7 @@ h4{
     display: flex;
     justify-content: space-between;
     max-width: 1000px;
-    margin:20px 0;
+    margin:20px auto;
 }
 .news-box-right{
     width: 70%;
@@ -502,7 +502,6 @@ li + li {
         width: 100%;
         height: auto;
         display: block;
-        auto:0 auto;
     }
     .news-box img{ 
         width: 86%;
